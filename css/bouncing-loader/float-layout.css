@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: black;
+}
+
+.box {
+    width: calc(25% - 20px);
+    color: white;
+    padding : 5px 10px;
+    line-height: 1.5em;
+}
+
+.box > h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box > p{
+    padding: 1% 2%;
+}
+.left {
+    float: left;
+}
+
+.first{
+    background: gold;
+
+}
+
+.second{
+    background: orangered;
+    
+}
+
+
+.third{
+    background: green;
+    
+}
+
+.fourth{
+    background: purple;
+    
+}
