@@ -1,0 +1,8 @@
+.subscribe {
+    background: seagreen;
+    color: white;
+    border: solid green 5px;
+    border-radius: 1%;
+    width: 40%;
+    text-align: center;
+}

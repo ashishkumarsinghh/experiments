@@ -1,0 +1,174 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "feed";
+        padding-top: 2vh;
+        box-sizing: border-box;
+        height: 90vh;
+    }
+    .main {
+        grid-area: feed;
+        background: #ffffff;
+        border-bottom: solid #adb1b4 1px;
+        box-sizing: border-box;
+    }
+    .header {
+        grid-area: header;
+        padding: 4vh;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: solid #adb1b4 1px;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        display: grid;
+        grid-template-areas: "header" "main" "footer"
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 0.5vh;
+        grid-template-areas: "leftbar feed";
+        padding-top: 2vh;
+        box-sizing: border-box;
+        width: 95%;
+        height: 90vh;
+        margin: 0 auto;
+    }
+    .header {
+        grid-area: header;
+        padding: 4vh;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: solid #adb1b4 1px;
+    }
+    .footer {
+        grid-area: footer;
+    }
+    .main {
+        grid-area: main;
+        margin: 0 auto;
+        padding-top: 2vh;
+        width: 90%;
+    }
+    .leftbar {
+        grid-area: leftbar;
+        box-sizing: border-box;
+    }
+    .main {
+        grid-area: feed;
+        background: #ffffff;
+        border: solid #adb1b4 1px;
+        box-sizing: border-box;
+    }
+    .leftbar {
+        display: grid;
+        grid-template-areas: "profilebox" "trendsbox";
+        grid-row-gap: 1vh;
+    }
+    .profilebox {
+        grid-area: profilebox;
+        border: solid #adb1b4 1px;
+        background: #ffffff;
+    }
+    .trendsbox {
+        grid-area: trendsbox;
+        border: solid #adb1b4 1px;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-areas: "header" "main" "footer"
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-column-gap: 0.5vh;
+        grid-template-areas: "leftbar feed rightbar";
+        padding-top: 2vh;
+        box-sizing: border-box;
+        width: 95%;
+        height: 90vh;
+        margin: 0 auto;
+    }
+    .header {
+        grid-area: header;
+        padding: 4vh;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: solid #adb1b4 1px;
+    }
+    .footer {
+        grid-area: footer;
+    }
+    .main {
+        grid-area: main;
+        margin: 0 auto;
+        padding-top: 2vh;
+        width: 90%;
+    }
+    .leftbar {
+        grid-area: leftbar;
+        box-sizing: border-box;
+    }
+    .main {
+        grid-area: feed;
+        background: #ffffff;
+        border: solid #adb1b4 1px;
+        box-sizing: border-box;
+    }
+    .rightbar {
+        grid-area: rightbar;
+        box-sizing: border-box;
+    }
+    .leftbar {
+        display: grid;
+        grid-template-areas: "profilebox" "trendsbox";
+        grid-row-gap: 1vh;
+    }
+    .rightbar {
+        display: grid;
+        grid-template-areas: "followbox" "aboutTwitter";
+        grid-row-gap: 1vh;
+    }
+    .profilebox {
+        grid-area: profilebox;
+        border: solid #adb1b4 1px;
+        background: #ffffff;
+    }
+    .trendsbox {
+        grid-area: trendsbox;
+        border: solid #adb1b4 1px;
+        background: #ffffff;
+    }
+    .followbox {
+        border: solid #adb1b4 1px;
+        background: #ffffff;
+    }
+    .aboutTwitter {
+        border: solid #adb1b4 1px;
+        background: #ffffff;
+    }
+}
+
+body {
+    background: #ececf0;
+}
