@@ -1,0 +1,99 @@
+.stitch {
+  width: 10rem;
+  background: #000;
+  outline: dashed rgba(255, 255, 255, 0.7) 2px;
+  outline-offset: -1rem;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1rem;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.fir {
+  background: #000;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.sec {
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  z-index: 1;
+  color: white;
+}
+.zindex {
+  display: flex;
+}
+.thi {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 430px;
+  left: 10px;
+  background: green;
+  z-index: 2;
+  color: white;
+}
+
+.fou {
+  position: absolute;
+  color: white;
+
+  width: 100px;
+  height: 100px;
+  top: 460px;
+  left: 20px;
+  background: blue;
+  z-index: 3;
+}
+
+.rotate {
+  width: 100px;
+  margin-top: 150px;
+  height: 100px;
+  background: deeppink;
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.scale:hover {
+  transform: scale(1, 2);
+}
+
+.skew:hover {
+  transform: skewX(25deg);
+  transform: skewY(25deg);
+}
+
+.translate:hover {
+  transform: translate(10px, 10px);
+}
+
+/*
+animation or transition
+transition : property duration function delay
+*/
+
+.trans {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+}
+
+.trans:hover {
+  background-color: red;
+  transition: background-color 0.5s ease-in-out 0.1s;
+}
